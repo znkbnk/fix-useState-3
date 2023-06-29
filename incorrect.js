@@ -24,7 +24,7 @@ function todoList() {
       <h1>Todo List</h1>
       <ul>
         {todos.map((todo, index) => (
-          <li> //Mistake 5: Missing 'key' prop in the mapped list items
+          <li> 
             {todo}
             <button onClick={deleteTodo(index)}>Delete</button>
           </li>
@@ -33,7 +33,6 @@ function todoList() {
       <button onClick={addTodo()}>Add Todo</button> 
       <button onClick={clearTodos}>Clear Todos</button>
     </div>
-  ;
 }
 
 export default todoList;
