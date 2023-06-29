@@ -43,3 +43,9 @@ Mistake 7: Immediate invocation of addTodo
 pass a function reference instead of
 immediately invoking addTodo.
 
+Mistake 8: Missing 'key' prop in the
+mapped list items
+-  To fix this, provide a unique 'key' prop
+to each list item by using a unique
+identifier, such as the index.
+
